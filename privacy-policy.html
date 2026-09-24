@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Notepad Anywhere</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdfcff;
+    --card: #ffffff;
+    --text: #241f38;
+    --text-secondary: #5b5478;
+    --border: rgba(40, 30, 80, 0.12);
+    --accent: #6c4fe0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1726;
+      --card: #221d34;
+      --text: #f1eefc;
+      --text-secondary: #b3aad1;
+      --border: rgba(255, 255, 255, 0.12);
+      --accent: #a894ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding-block: 48px;
+    padding-inline: 20px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px clamp(20px, 6vw, 56px);
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0 0 4px;
+  }
+  .updated {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    margin: 32px 0 10px;
+    color: var(--accent);
+  }
+  p, li { color: var(--text); }
+  ul { padding-left: 1.2em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy for Notepad Anywhere</h1>
+  <p class="updated">Last updated: September 24, 2026</p>
+
+  <p>Notepad Anywhere ("the extension") is a note-taking browser extension. This policy explains what data it handles and how.</p>
+
+  <h2>What data is stored</h2>
+  <p>The extension stores only what you type into it: note titles, note content, and basic preferences (such as your chosen theme). This data is saved using Chrome's built-in storage APIs (<code>chrome.storage.sync</code> and <code>chrome.storage.local</code>) and syncs automatically across browsers where you are signed into the same Google/Chrome account, exactly as Chrome handles bookmarks or browser settings.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>We do not operate any server that receives, stores, or processes your notes.</li>
+    <li>We do not share, sell, or transmit your data to any third party.</li>
+    <li>We do not use analytics, tracking, or advertising services.</li>
+    <li>We do not collect personally identifiable information.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>The extension requests only the <code>storage</code> permission, used solely to save your notes locally and sync them via Chrome's own infrastructure.</p>
+
+  <h2>Data deletion</h2>
+  <p>Deleting a note moves it to the extension's Trash, where it can be permanently deleted at any time (or is automatically purged after 30 days). Uninstalling the extension removes its locally stored data; synced data is removed from your Google account's Chrome sync storage according to Google's own sync data retention practices.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "Last updated" date above will be revised accordingly.</p>
+
+  <h2>Contact</h2>
+  <!-- TODO: replace with your real contact email before publishing -->
+  <p>Questions about this policy can be sent to <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+
+  <footer>
+    Notepad Anywhere is a browser extension. This page describes its data practices only.
+  </footer>
+</main>
+</body>
+</html>
